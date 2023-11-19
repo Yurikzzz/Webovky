@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    background-color: rgb(44, 44, 44);
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+footer{
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+    color: white;
+    background-color: black;
+    bottom: 0;
+    position: sticky;
+    font-size: x-small;
+}
+.footer{
+    top: 10px;
+    position: relative;
+}
+.nadpis{
+    position: sticky;
+    top: 15px;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    top: 25px;
+    position: sticky;
+    margin: 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.navbar{
+    justify-content: space-between;
+    z-index: 2;
+    background-color: rgb(44, 44, 44);
+}
+.container{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    font-size: x-large;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+img{
+    width: 80%;
+    height: auto;
+}
+.projekt1 img{
+    height: 250.52px;
+}
+main{
+    width: auto;
+    height: auto;
+}
+@media screen and (max-width: 500px) {
+    .container{
+        margin-top: 50px;
+        margin-bottom: 150px;
+        margin-left: 80px;
+        margin-right: 100px;
+    }
+    input[type="text"]{
+        height: 2vh;
+        font-size: small;
+    }
+    input[type="submit"]{
+        height: 2vh;
+    }
+}
+.nadpisprojekty{
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+.gridprojekty{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+    position: relative;
+    top: 25px;
+    margin-bottom: 300px;
+
+}
+.gridprojekty img:hover{
+    transform: scale(1.3);
+    margin-bottom: 50px;
+}
+.gridprojekty img{
+    transition: transform 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
+}
+.kontakt{
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-bottom: 300px;
+    justify-items: center;
+}
+.nadpisformulare{
+    text-align: center;
+    margin-bottom: 80px;
+}
+input{
+    width: 50vw;
+    height: 5vh;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s;
+    font-size: large;
+    border: 1px solid black;
+}
+input[type="text"]:focus{
+    background-color: #00a796;
+    border-color: white;
+    color: white;
+    border: 1px solid rgb(182, 182, 182);
+}
+input[type="submit"]{
+    background-color: #00a796;
+    color: white;
+    margin-top: 20px;
+    width: 30vw;
+    height: 5vh;
+    border: none;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #008679;
+}

@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#element {
+    width: 100px;
+    height: 100px;
+    background-color: blue; /* Default color */
+}
+.buttonContainer {
+    margin-top: 20px;
+}
+.modifierButton {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}

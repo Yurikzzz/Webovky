@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="image" src="./img/kocicky1.jpg" onclick="showImagePopup(this.src)">
+    <img class="image" src="./img/kocicky2.jpg" onclick="showImagePopup(this.src)">
+    <img class="image" src="./img/kocicky3.webp" onclick="showImagePopup(this.src)">
+    <img class="image" src="./img/pejsci1.jpg" onclick="showImagePopup(this.src)">
+    <img class="image" src="./img/pejsci2.jpg" onclick="showImagePopup(this.src)">
+    <img class="image" src="./img/pejsci3.jpg" onclick="showImagePopup(this.src)">
+    
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeImagePopup()">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="">
+      </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
